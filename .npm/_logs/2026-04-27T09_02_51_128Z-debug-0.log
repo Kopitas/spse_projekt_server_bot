@@ -1,0 +1,116 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v20.19.2
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 3ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:/home/dev/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 12ms
+16 timing npm:load:configload Completed in 12ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm i @openai/codex
+20 verbose argv "i" "--global" "@openai/codex"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 4ms
+23 timing npm:load:display Completed in 4ms
+24 verbose logfile logs-max:10 dir:/home/dev/.npm/_logs/2026-04-27T09_02_51_128Z-
+25 verbose logfile /home/dev/.npm/_logs/2026-04-27T09_02_51_128Z-debug-0.log
+26 timing npm:load:logFile Completed in 9ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 1ms
+29 timing npm:load Completed in 29ms
+30 timing config:load:flatten Completed in 0ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 7ms
+34 timing idealTree:userRequests Completed in 5ms
+35 silly idealTree buildDeps
+36 silly fetch manifest @openai/codex@*
+37 http fetch GET 200 https://registry.npmjs.org/@openai%2fcodex 24ms (cache hit)
+38 silly placeDep ROOT @openai/codex@0.125.0 OK for:  want: *
+39 silly fetch manifest @openai/codex-linux-x64@npm:@openai/codex@0.125.0-linux-x64
+40 silly fetch manifest @openai/codex-win32-x64@npm:@openai/codex@0.125.0-win32-x64
+41 silly fetch manifest @openai/codex-darwin-x64@npm:@openai/codex@0.125.0-darwin-x64
+42 silly fetch manifest @openai/codex-linux-arm64@npm:@openai/codex@0.125.0-linux-arm64
+43 silly fetch manifest @openai/codex-win32-arm64@npm:@openai/codex@0.125.0-win32-arm64
+44 silly fetch manifest @openai/codex-darwin-arm64@npm:@openai/codex@0.125.0-darwin-arm64
+45 timing idealTree:#root Completed in 58ms
+46 silly placeDep node_modules/@openai/codex @openai/codex-darwin-arm64@0.125.0-darwin-arm64 OK for: @openai/codex@0.125.0 want: npm:@openai/codex@0.125.0-darwin-arm64
+47 silly placeDep node_modules/@openai/codex @openai/codex-darwin-x64@0.125.0-darwin-x64 OK for: @openai/codex@0.125.0 want: npm:@openai/codex@0.125.0-darwin-x64
+48 silly placeDep node_modules/@openai/codex @openai/codex-linux-arm64@0.125.0-linux-arm64 OK for: @openai/codex@0.125.0 want: npm:@openai/codex@0.125.0-linux-arm64
+49 silly placeDep node_modules/@openai/codex @openai/codex-linux-x64@0.125.0-linux-x64 OK for: @openai/codex@0.125.0 want: npm:@openai/codex@0.125.0-linux-x64
+50 silly placeDep node_modules/@openai/codex @openai/codex-win32-arm64@0.125.0-win32-arm64 OK for: @openai/codex@0.125.0 want: npm:@openai/codex@0.125.0-win32-arm64
+51 silly placeDep node_modules/@openai/codex @openai/codex-win32-x64@0.125.0-win32-x64 OK for: @openai/codex@0.125.0 want: npm:@openai/codex@0.125.0-win32-x64
+52 timing idealTree:node_modules/@openai/codex Completed in 23ms
+53 timing idealTree:node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64 Completed in 0ms
+54 timing idealTree:node_modules/@openai/codex/node_modules/@openai/codex-darwin-x64 Completed in 0ms
+55 timing idealTree:node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64 Completed in 0ms
+56 timing idealTree:node_modules/@openai/codex/node_modules/@openai/codex-linux-x64 Completed in 0ms
+57 timing idealTree:node_modules/@openai/codex/node_modules/@openai/codex-win32-arm64 Completed in 0ms
+58 timing idealTree:node_modules/@openai/codex/node_modules/@openai/codex-win32-x64 Completed in 0ms
+59 timing idealTree:buildDeps Completed in 84ms
+60 timing idealTree:fixDepFlags Completed in 1ms
+61 timing idealTree Completed in 99ms
+62 timing reify:loadTrees Completed in 119ms
+63 timing reify:diffTrees Completed in 2ms
+64 silly reify mark retired [ '/usr/local/lib/node_modules/@openai/codex', '/usr/local/bin/codex' ]
+65 silly reify moves {
+65 silly reify   '/usr/local/lib/node_modules/@openai/codex': '/usr/local/lib/node_modules/@openai/.codex-vdnmINeK',
+65 silly reify   '/usr/local/bin/codex': '/usr/local/bin/.codex-ihkNSews'
+65 silly reify }
+66 timing reify:rollback:retireShallow Completed in 0ms
+67 timing command:i Completed in 136ms
+68 verbose stack Error: EACCES: permission denied, rename '/usr/local/lib/node_modules/@openai/codex' -> '/usr/local/lib/node_modules/@openai/.codex-vdnmINeK'
+68 verbose stack     at async Object.rename (node:internal/fs/promises:780:10)
+68 verbose stack     at async moveFile (/usr/share/nodejs/@npmcli/fs/lib/move-file.js:30:5)
+68 verbose stack     at async Promise.allSettled (index 0)
+68 verbose stack     at async [reifyPackages] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:234:11)
+68 verbose stack     at async Arborist.reify (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:158:5)
+68 verbose stack     at async Install.exec (/usr/share/nodejs/npm/lib/commands/install.js:146:5)
+68 verbose stack     at async module.exports (/usr/share/nodejs/npm/lib/cli.js:133:5)
+69 verbose cwd /home/dev
+70 verbose Linux 6.12.75+rpt-rpi-2712
+71 verbose node v20.19.2
+72 verbose npm  v9.2.0
+73 error code EACCES
+74 error syscall rename
+75 error path /usr/local/lib/node_modules/@openai/codex
+76 error dest /usr/local/lib/node_modules/@openai/.codex-vdnmINeK
+77 error errno -13
+78 error Error: EACCES: permission denied, rename '/usr/local/lib/node_modules/@openai/codex' -> '/usr/local/lib/node_modules/@openai/.codex-vdnmINeK'
+78 error     at async Object.rename (node:internal/fs/promises:780:10)
+78 error     at async moveFile (/usr/share/nodejs/@npmcli/fs/lib/move-file.js:30:5)
+78 error     at async Promise.allSettled (index 0)
+78 error     at async [reifyPackages] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:234:11)
+78 error     at async Arborist.reify (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:158:5)
+78 error     at async Install.exec (/usr/share/nodejs/npm/lib/commands/install.js:146:5)
+78 error     at async module.exports (/usr/share/nodejs/npm/lib/cli.js:133:5) {
+78 error   errno: -13,
+78 error   code: 'EACCES',
+78 error   syscall: 'rename',
+78 error   path: '/usr/local/lib/node_modules/@openai/codex',
+78 error   dest: '/usr/local/lib/node_modules/@openai/.codex-vdnmINeK'
+78 error }
+79 error
+79 error The operation was rejected by your operating system.
+79 error It is likely you do not have the permissions to access this file as the current user
+79 error
+79 error If you believe this might be a permissions issue, please double-check the
+79 error permissions of the file and its containing directories, or try running
+79 error the command again as root/Administrator.
+80 verbose exit -13
+81 timing npm Completed in 187ms
+82 verbose unfinished npm timer reify 1777280571176
+83 verbose unfinished npm timer reify:retireShallow 1777280571303
+84 verbose code -13
+85 error A complete log of this run can be found in:
+85 error     /home/dev/.npm/_logs/2026-04-27T09_02_51_128Z-debug-0.log
