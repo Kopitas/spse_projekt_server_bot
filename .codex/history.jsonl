@@ -1,0 +1,5 @@
+{"session_id":"019dce50-01a8-7dc1-a3a9-51bbfa6b220f","ts":1777282936,"text":"Can you create a template for project that will host a discord bot which will parse information from a website skolaonline.cz please add .env where i can paste all API keys etc..."}
+{"session_id":"019dce5d-3ee1-7ad0-b27d-8e4c17344567","ts":1777283769,"text":"Can you please search the github for libraries that can fetch skola-online data. I think some teacher from spse has done this project can yo uverify? Do not lie"}
+{"session_id":"019dce5d-3ee1-7ad0-b27d-8e4c17344567","ts":1777283905,"text":"Whats michto01/ardp"}
+{"session_id":"019dce5d-3ee1-7ad0-b27d-8e4c17344567","ts":1777283972,"text":"How would you get information from skola online?"}
+{"session_id":"019dce5d-3ee1-7ad0-b27d-8e4c17344567","ts":1777284161,"text":"https://libre-skolaonline.github.io/API-docs/#/default/post_connect_token From this can you create a test where it will fetch the data"}

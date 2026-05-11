@@ -1,0 +1,17 @@
+[Unit]
+Description=Informator SPSE Discord bot
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=dev
+WorkingDirectory=/home/dev/spseprojekt
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=-/home/dev/spseprojekt/.env
+ExecStart=/home/dev/spseprojekt/venv/bin/python /home/dev/spseprojekt/bot/run.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
