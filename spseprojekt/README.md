@@ -52,4 +52,32 @@ run.py                   App entrypoint
 - Update `bot/skolaonline/parser.py` with selectors for the exact page data you want.
 - Add new slash commands in `bot/discord_bot.py`.
 
+## Škola OnLine API Test
+
+The integration test uses the unofficial API documented at:
+
+```text
+https://libre-skolaonline.github.io/API-docs/
+```
+
+Run the test with:
+
+```bash
+venv/bin/python -m pytest tests/test_skolaonline_api.py -q
+```
+
+The test requires valid values in `.env`:
+
+```dotenv
+SKOLAONLINE_BASE_URL=https://aplikace.skolaonline.cz/solapi/api
+SKOLAONLINE_USERNAME=your-login
+SKOLAONLINE_PASSWORD=your-password
+```
+
+By default it only fetches the current user profile. To also fetch marks, run:
+
+```bash
+SKOLAONLINE_FETCH_MARKS=1 venv/bin/python -m pytest tests/test_skolaonline_api.py -q
+```
+
 Do not commit real credentials. This template includes `.env` for local editing, but `.gitignore` excludes it from git.
