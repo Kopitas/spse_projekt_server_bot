@@ -16,3 +16,7 @@ logs/
 .DS_Store
 .idea/
 .vscode/
+.vscode-server/
+.cache/
+.codex/
+.viminfo
